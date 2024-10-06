@@ -13,16 +13,21 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'max-len': 0,
-    'no-param-reassign': 0,
-    'jsx-a11y/label-has-associated-control': 0,
-    'react/function-component-definition': 0,
-    'react/react-in-jsx-scope': 0,
-    'import/extensions': 0,
-    'react/prop-types': 0,
-    'linebreak-style': 0,
-    'react/state-in-constructor': 0,
-    'import/prefer-default-export': 0,
+    'max-len': 'off', // Disable max length rule
+    'no-param-reassign': 'off', // Allow parameter reassignments
+    'react/react-in-jsx-scope': 'off', // No need for React in scope with React 17+
+    'react/prop-types': 'off', // Disable prop-types for TypeScript
+    'import/extensions': 'off', // Disable import extension rules
+    'linebreak-style': 'off', // Disable linebreak style enforcement
+    'object-curly-newline': 'off', // Disable new line enforcement for objects
+    'react/function-component-definition': 'off', // Allow any function component definition style
+    'react/jsx-filename-extension': 'off', // No restriction on file extensions
+    'react/jsx-one-expression-per-line': 'off', // Allow multiple expressions in one line
+    'jsx-a11y/click-events-have-key-events': 'off', // Disable click events have key events rule
+    'jsx-a11y/alt-text': 'off', // Disable alt text enforcement
+    'jsx-a11y/no-autofocus': 'off', // Allow autofocus on elements
+    'jsx-a11y/no-static-element-interactions': 'off', // Allow static elements to have interactions
+    'react/no-array-index-key': 'off', // Allow usage of array index as key
     'no-multiple-empty-lines': [
       'error',
       {
@@ -36,14 +41,6 @@ module.exports = {
         allow: ['_d', '_dh', '_h', '_id', '_m', '_n', '_t', '_text'],
       },
     ],
-    'object-curly-newline': 0,
-    'react/jsx-filename-extension': 0,
-    'react/jsx-one-expression-per-line': 0,
-    'jsx-a11y/click-events-have-key-events': 0,
-    'jsx-a11y/alt-text': 0,
-    'jsx-a11y/no-autofocus': 0,
-    'jsx-a11y/no-static-element-interactions': 0,
-    'react/no-array-index-key': 0,
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
